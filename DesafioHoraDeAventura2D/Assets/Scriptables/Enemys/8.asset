@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f78df6e49e6a1a498f3ef7647d1c129, type: 3}
-  m_Name: 1
+  m_Name: 8
   m_EditorClassIdentifier: 
-  number: 1
-  xpValue: 15
-  pointsValue: 2
-  speed: 4
-  art: {fileID: 21300000, guid: b0b382598881bde419bd4428a222e341, type: 3}
+  number: 8
+  xpValue: 22
+  pointsValue: 5
+  speed: 5
+  art: {fileID: 21300000, guid: 5a2f23adf04a5be4391b01891af1e7e9, type: 3}

@@ -4840,7 +4840,7 @@ Transform:
   m_GameObject: {fileID: 5306387067712568562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.6819754, y: -3.2270732, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 176540973811700922}
   - {fileID: 8618279916788919315}
@@ -4912,14 +4912,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creat: {fileID: 11400000, guid: 6d26aa5167de5b743af4c9580b07364e, type: 2}
   number: 9
-  p: {fileID: 0}
   xpValue: 20
   pointsValue: 2
   pause: 0
-  currentAction: 1
   target: {fileID: 0}
   lasttarget: {fileID: 0}
   player: {fileID: 0}
+  currentAction: 1
 --- !u!61 &5306387067712568561
 BoxCollider2D:
   m_ObjectHideFlags: 0

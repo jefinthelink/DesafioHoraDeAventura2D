@@ -4825,7 +4825,7 @@ GameObject:
   - component: {fileID: 5306387067712568560}
   - component: {fileID: 5306387067712568561}
   m_Layer: 0
-  m_Name: 0
+  m_Name: 3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4840,7 +4840,7 @@ Transform:
   m_GameObject: {fileID: 5306387067712568562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.6819754, y: -3.2270732, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 176540973811700922}
   - {fileID: 8618279916788919315}
@@ -4910,7 +4910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1da8217046de8d47ad7803a61462a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creat: {fileID: 11400000, guid: 3e17f120e6bf14f478d0de494fb44732, type: 2}
+  creat: {fileID: 11400000, guid: f53c0925aad067344a9b8cca5d6ad855, type: 2}
   number: 9
   xpValue: 20
   pointsValue: 2

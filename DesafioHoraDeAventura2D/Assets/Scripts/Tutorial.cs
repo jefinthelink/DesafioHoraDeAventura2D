@@ -39,7 +39,7 @@ public class Tutorial : MonoBehaviour
     {
         index = 0;
         content.SetActive(false);
-        logo.SetActive(true);
+       // logo.SetActive(true);
     }
 
 }

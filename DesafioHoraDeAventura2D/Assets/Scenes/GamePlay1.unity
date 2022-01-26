@@ -13937,6 +13937,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5759457288645964552, guid: e19f1365fa4a7e04d96cfc5c645ea830, type: 3}
+      propertyPath: enemys.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759457288645964552, guid: e19f1365fa4a7e04d96cfc5c645ea830, type: 3}
+      propertyPath: enemys.Array.data[3]
+      value: 
+      objectReference: {fileID: 5306387067712568562, guid: ffc438b57d460b742836edf6c810de75, type: 3}
+    - target: {fileID: 5759457288645964552, guid: e19f1365fa4a7e04d96cfc5c645ea830, type: 3}
       propertyPath: placesToSpawnXp.Array.data[0]
       value: 
       objectReference: {fileID: 1996797518}
