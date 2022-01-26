@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5759457288645964551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5759457288645964553}
+  - component: {fileID: 5759457288645964552}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5759457288645964553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5759457288645964551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.02, y: -1.98, z: -2.0019457}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5759457288645964552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5759457288645964551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41b3e7beb044724fb11bb49e9ade986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemys:
+  - {fileID: 5306387067712568562, guid: 4a472ba0d18b7ee428e836a3de35d67a, type: 3}
+  - {fileID: 5306387067712568562, guid: a689b14bd8034254a8ab35c1f8afc3f9, type: 3}
+  - {fileID: 5306387067712568562, guid: 4acbcc61aac6e804baf853fe101b9e84, type: 3}
+  enemyCount: 4
+  xp: {fileID: 5888168254709499881, guid: 7e17ccc12c28097479bdab9f793a7f27, type: 3}
+  placesToSpawnXp:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  delayToSpawnXp: 3
+  events: {fileID: 3222735260434814544, guid: 9f657e2dc7f72ec4bbb741540f07bb0f, type: 3}
+  placesOfSpawnEvents:
+  - {fileID: 0}
+  delaytoSpawnEvents: 10.8
+  currentXp: {fileID: 0}
+  currentEvent: {fileID: 0}
