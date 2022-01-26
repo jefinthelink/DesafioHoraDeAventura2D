@@ -633,18 +633,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 984771270}
-        m_TargetAssemblyTypeName: AudioHelper, Assembly-CSharp
-        m_MethodName: PlayAudio
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Click2
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &449298022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,6 +684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stayAudioName: Click
+  clickAudioName: Click2
 --- !u!1 &510701094
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,6 +843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stayAudioName: Click
+  clickAudioName: Click2
 --- !u!1 &544927706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,6 +1342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stayAudioName: Click
+  clickAudioName: Click2
 --- !u!1 &844142921
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,18 +2037,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 984771270}
-        m_TargetAssemblyTypeName: AudioHelper, Assembly-CSharp
-        m_MethodName: PlayAudio
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Click2
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1139606729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2109,6 +2088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stayAudioName: Click
+  clickAudioName: Click2
 --- !u!1 &1260963142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,18 +2342,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 984771270}
-        m_TargetAssemblyTypeName: AudioHelper, Assembly-CSharp
-        m_MethodName: PlayAudio
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Click2
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &1502766833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,6 +2393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stayAudioName: Click
+  clickAudioName: Click2
 --- !u!1 &1525188946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,18 +2550,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 984771270}
-        m_TargetAssemblyTypeName: AudioHelper, Assembly-CSharp
-        m_MethodName: PlayAudio
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Click2
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 884559042}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -2656,6 +2613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stayAudioName: Click
+  clickAudioName: Click2
 --- !u!1 &1947017179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3109,18 +3067,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1860811}
-        m_TargetAssemblyTypeName: SceneHelper, Assembly-CSharp
-        m_MethodName: ResetGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 984771270}
         m_TargetAssemblyTypeName: AudioHelper, Assembly-CSharp
         m_MethodName: PlayAudio
@@ -3184,6 +3130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stayAudioName: Click
+  clickAudioName: Click2
 --- !u!1001 &7751490469887137671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3237,8 +3184,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
       propertyPath: TurnOnRadio
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e43074febb0cfb43b7988e8b3c4b8eb, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ec8bf4d80276fb419d23e378e681bc1, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: f069c6a904b957a4b8de2a0a758dfd62, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: fc66d5ccd2903774a88b2899bbf9f89c, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1438239a30de2fa4ca4f5a18f8538406, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4a9d89bb5c9f9c8479d34631f961efbf, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: b13ba9c7ef090be45adf87714fb9dce7, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 79689923dabfd3e448ea99eb8a9042d2, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: e72cc24ebd4391e4997535f6b79254c7, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ec8bf4d80276fb419d23e378e681bc1, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: f069c6a904b957a4b8de2a0a758dfd62, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: fc66d5ccd2903774a88b2899bbf9f89c, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1438239a30de2fa4ca4f5a18f8538406, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[13]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4a9d89bb5c9f9c8479d34631f961efbf, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[14]
+      value: 
+      objectReference: {fileID: 8300000, guid: b13ba9c7ef090be45adf87714fb9dce7, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[15]
+      value: 
+      objectReference: {fileID: 8300000, guid: 79689923dabfd3e448ea99eb8a9042d2, type: 3}
+    - target: {fileID: 7751490469791579457, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
+      propertyPath: musics.Array.data[16]
+      value: 
+      objectReference: {fileID: 8300000, guid: e72cc24ebd4391e4997535f6b79254c7, type: 3}
     - target: {fileID: 7751490469791579458, guid: c2fd345d4a6325542b6a9fb9d6866ec0, type: 3}
       propertyPath: m_Name
       value: AudioHelper
