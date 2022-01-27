@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af14b7a06802f464f92c2f9f38c2e049, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  art: {fileID: 21300000, guid: 5ac7a0c0ed32b5a4599e6694f6cd1548, type: 3}
+  description: "At\xE9 que algo de estranho acontece, a princesa jujuba desaparece
+    em um unico piscas de olhos deixando todos arrepiados."
