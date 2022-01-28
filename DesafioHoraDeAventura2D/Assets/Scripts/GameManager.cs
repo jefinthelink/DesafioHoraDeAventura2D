@@ -27,13 +27,13 @@ public class GameManager : MonoBehaviour
     }
     private void SaveRecord()
     {
-        Debug.Log("salvando o recorde: " + pointsRecord);
+       
         PlayerPrefs.SetInt("PointsRecord", pointsRecord);
-        Debug.Log("dalvo o recorde de; " + PlayerPrefs.GetInt("PointsRecord", 0));
+      
     }
     private void GetSave()
     {
-        Debug.Log("pegando o recorde " + PlayerPrefs.GetInt("PointsRecord", 0));
+      
         pointsRecord = PlayerPrefs.GetInt("PointsRecord", 0);
     }
 

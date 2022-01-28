@@ -66,7 +66,7 @@ public class Spawner : MonoBehaviour
                 {
                     delaytoSpawnEvents = delaytoSpawnEventsAux;
                     currentEvent = Instantiate(events, placesOfSpawnEvents[Random.Range(0, placesOfSpawnEvents.Length)].position, Quaternion.identity);
-                Debug.Log("instanciou evento");
+               
                 }
             }
     }

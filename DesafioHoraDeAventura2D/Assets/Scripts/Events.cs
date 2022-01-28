@@ -35,6 +35,10 @@ public class Events : MonoBehaviour
         timeDoublePointsAux = timeDoublePoints;
         timeEnemyFollowPlayerAux = timeEnemyFollowPlayer;
         timetoAnswerAux -= timetoAnswer;
+        PanelEvents.SetActive(true);
+        ChooseBills();
+        ChooseBtn();
+        
     }
     private void Update()
     {
@@ -72,18 +76,18 @@ public class Events : MonoBehaviour
         {
             timetoAnswer = timetoAnswerAux;
             startEvent = false;
-            FinishEvent(false);
+            FinishLoseEvent();
         }
         }
     }
     public void StartEvent()
     {
-        
+        Debug.Log("startou o evento");
+        PanelEvents.SetActive(true);
         VerifyEnemys();
         PauseEnemy(true);
-        PanelEvents.SetActive(true);
-        ChooseBills();
-        ChooseBtn();
+       // ChooseBills();
+       // ChooseBtn();
         startEvent = true;
     }
     private void PauseEnemy(bool value)
@@ -93,27 +97,10 @@ public class Events : MonoBehaviour
             enemysInAcene[i].pause = value;
         }
     }
-    public void FinishEvent(bool win)
-    {
-        PauseEnemy(false);
-        PanelEvents.SetActive(false);
-        if (win)
-        {
-            VerifyEnemys();
-            ChangePoints(true);
-            startDoublePoints = true;
-          
-        }
-        else
-        {
-            VerifyEnemys();
-            startFollowPlayer = true;
-            ChangeModes(Action.FollowPlayer);
-            GameManager.instance.UnpauseGame();
-        }
-    }
+    
     private void VerifyEnemys()
     {
+        Debug.Log("verificando inimigos");
         enemysInAceneObj = GameObject.FindGameObjectsWithTag("Enemy");
         enemysInAcene = new Enemy[enemysInAceneObj.Length];
         for(int i = 0; i < enemysInAceneObj.Length; i++ )
@@ -123,6 +110,7 @@ public class Events : MonoBehaviour
     }
     private void ChangeModes(Action action)
     {
+        Debug.Log("trocando o modo do inimigo");
         for (int i = 0; i < enemysInAcene.Length; i++)
         {
             enemysInAcene[i].currentAction = action;
@@ -130,6 +118,7 @@ public class Events : MonoBehaviour
     }
     private void ChangePoints(bool double_)
     {
+        Debug.Log("mudando modo de pontos");
         if (double_)
         {
             for (int i = 0; i < enemysInAcene.Length; i++)
@@ -147,28 +136,32 @@ public class Events : MonoBehaviour
     }
     private void ChooseBtn()
     {
+        Debug.Log("escolhendo o botão");
         indexOfbtnWithTrueAnswer = Random.Range(0, answersbtn.Length);
         btnWithTrueAnswer = answersbtn[indexOfbtnWithTrueAnswer];
         btnWithTrueAnswer.GetComponentInChildren<TMP_Text>().text = answers[indexOfBills].ToString();
-        btnWithTrueAnswer.onClick.AddListener(()=> { FinishEvent(true); });
+        btnWithTrueAnswer.onClick.AddListener(FinishWinEvent);
 
         for (int i = 0; i < answersbtn.Length; i++)
         {
             if (i != indexOfbtnWithTrueAnswer)
             {
-                answersbtn[i].onClick.AddListener(() => { FinishEvent(false); });
+                answersbtn[i].onClick.AddListener(FinishLoseEvent);
                 answersbtn[i].GetComponentInChildren<TMP_Text>().text = Chooseanswers().ToString();
             }
         }
+        PanelEvents.SetActive(false);
     }
     public void ChooseBills()
     {
+        Debug.Log("escolhendo pergunta");
         indexOfBills = Random.Range(0, bills.Length);
         currentBills = bills[indexOfBills];
         textAnswer.text = currentBills;
     }
     public int Chooseanswers()
     {
+        Debug.Log("escolhendo respostas");
         int index;
         do
         {
@@ -177,5 +170,34 @@ public class Events : MonoBehaviour
         } while (index == indexOfBills);
         return answers[index];
     }
+public void FinishWinEvent()
+    {
+       
+       // PanelEvents.SetActive(false);
+        
+            Debug.Log("acertou");
+            VerifyEnemys();
+            ChangePoints(true);
+            PanelEvents.SetActive(false);
+            startDoublePoints = true;
+          
+        
+       
+        
+        PauseEnemy(false);
+    }
+
+public void FinishLoseEvent()
+{
+            Debug.Log("Errou");
+            VerifyEnemys();
+            startFollowPlayer = true;
+            ChangeModes(Action.FollowPlayer);
+            PanelEvents.SetActive(false);
+            GameManager.instance.UnpauseGame();
+             PauseEnemy(false);
+
+}
+
 
 }

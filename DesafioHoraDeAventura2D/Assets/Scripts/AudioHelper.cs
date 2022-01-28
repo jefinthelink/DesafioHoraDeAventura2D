@@ -76,7 +76,6 @@ private void Awake() {
         }
         audioSourceMusic.clip = musics[musicCount];
         audioSourceMusic.Play();
-        Debug.Log("trocando de musica =  " + musics[musicCount].name);
         musicCount ++;
     }
     public void UnPauseMusic()
