@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 262eed9f298689949876c52d29d61834, type: 3}
-  m_Name: Objetivo
+  m_Name: XP
   m_EditorClassIdentifier: 
-  tutorialName: Objetivo
-  art: {fileID: 21300000, guid: d8e910ac21483f2478112d2002bf38a2, type: 3}
-  description: Mate todos o inimigos da partida.
+  tutorialName: XP
+  art: {fileID: 21300000, guid: 7456f651bca92334d95d16b9f28e1715, type: 3}
+  description: "no cenario aparecer\xE1 tortas, coma elas e ganhe xp para subir de
+    nivel"

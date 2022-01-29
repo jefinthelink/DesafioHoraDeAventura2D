@@ -24,6 +24,7 @@ public class GameOver : MonoBehaviour
     }
     public void ShowPanel()
     {
+Debug.Log("mostrando painel");
         content.SetActive(true);
         panelGameplay.SetActive(false);
         GameManager.instance.PauseGame();

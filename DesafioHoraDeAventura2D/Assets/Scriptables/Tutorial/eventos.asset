@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: eventos
   m_EditorClassIdentifier: 
   tutorialName: 'Eventos '
-  art: {fileID: 21300000, guid: 9650f83e4ff0ebc44810a264fde92342, type: 3}
+  art: {fileID: 21300000, guid: a4dd00b87c8cd6a408b07a038ca500c2, type: 3}
   description: "Durante o jogo, ir\xE1 aparecer eventos em determinados lugares do
     mapa."

@@ -18,8 +18,8 @@ public class Spawner : MonoBehaviour
 
     private float delayToSpawnXpAux;
     private float delaytoSpawnEventsAux;
-    public GameObject currentXp = null;
-    public GameObject currentEvent = null;
+    [HideInInspector]public GameObject currentXp = null;
+    [HideInInspector]public GameObject currentEvent = null;
 
     private void Start()
     {

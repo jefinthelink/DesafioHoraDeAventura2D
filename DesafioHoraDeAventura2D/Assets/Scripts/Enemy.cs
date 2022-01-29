@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class Enemy : MonoBehaviour
     [HideInInspector] public Transform target;
     [HideInInspector] public Transform lasttarget;
     [HideInInspector] public Transform player;
-    
+    [SerializeField] private TMP_Text levelText; 
     
     private float speed = 4.0f;
     private Sprite sprite;
@@ -43,6 +44,7 @@ public class Enemy : MonoBehaviour
 
         spriteRenderer = transform.GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = sprite;
+        levelText.text = number.ToString();
 
     }
     private void Update()

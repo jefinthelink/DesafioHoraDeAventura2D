@@ -2669,7 +2669,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modes: 0
-  createTutorial: []
+  createTutorial:
+  - {fileID: 11400000, guid: a3cbc27dc80f88748bc618f64db48a09, type: 2}
+  - {fileID: 11400000, guid: 192ea998adab3364fa045814504001cd, type: 2}
+  - {fileID: 11400000, guid: eeb094bf24251184c99af89e156375e4, type: 2}
+  - {fileID: 11400000, guid: 5d4dbe82a298e07409d2a6da30102786, type: 2}
+  - {fileID: 11400000, guid: 5ebbae61f9f7b0949be23075d41929c6, type: 2}
+  - {fileID: 11400000, guid: 693c87d992156584f9d914875fb0b693, type: 2}
   createHistories: []
   tutorialName: {fileID: 1526957}
   description: {fileID: 431490061}
@@ -3336,7 +3342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pular
+  m_text: Pular Historia
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

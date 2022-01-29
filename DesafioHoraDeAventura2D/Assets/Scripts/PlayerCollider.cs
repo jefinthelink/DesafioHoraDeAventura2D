@@ -5,6 +5,7 @@ public class PlayerCollider : MonoBehaviour
 {
      private Player player;
     private AudioSource source;
+    private int enemyInScene = 0;
     
 
     private void Start()
@@ -15,6 +16,7 @@ public class PlayerCollider : MonoBehaviour
     {
         player = transform.GetComponent<Player>();
         source = transform.GetComponent<AudioSource>();
+
     }
      void OnCollisionEnter2D(Collision2D collision)
     {
@@ -32,7 +34,6 @@ public class PlayerCollider : MonoBehaviour
                 player.points += enemy.pointsValue;
                 player.GetXp(enemy.xpValue);
                 Destroy(collision.gameObject);
-               
             }
         }
         if (collision.gameObject.CompareTag("Xp"))
