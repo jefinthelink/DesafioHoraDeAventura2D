@@ -3,7 +3,6 @@
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public int pointsRecord = 0;
     public int points;
     private void Awake()
     {
@@ -14,28 +13,10 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
-        GetSave();
+        
     }
 
-    public void VerifyRecord()
-    {
-        if (points > pointsRecord)
-        {
-            pointsRecord = points;
-            SaveRecord();
-        }
-    }
-    private void SaveRecord()
-    {
-       
-        PlayerPrefs.SetInt("PointsRecord", pointsRecord);
-      
-    }
-    private void GetSave()
-    {
-      
-        pointsRecord = PlayerPrefs.GetInt("PointsRecord", 0);
-    }
+
 
     public void PauseGame()
     {
