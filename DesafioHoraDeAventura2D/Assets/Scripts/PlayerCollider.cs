@@ -5,7 +5,7 @@ public class PlayerCollider : MonoBehaviour
 {
      private Player player;
     private AudioSource source;
-    private int enemyInScene = 0;
+
     
 
     private void Start()
